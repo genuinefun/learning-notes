@@ -1,0 +1,182 @@
+﻿@charset "utf-8";
+
+body, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, input, li, ol, p, pre, td, textarea, th, ul { margin: 0; padding: 0 }
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400 }
+
+body { font-family: PingFang SC,Helvetica,Arial,Verdana,Microsoft YaHei !important; font: 12px/1.6 Tahoma,Arial,Hiragino Sans GB,\5b8b\4f53; color: #373D41; -webkit-text-size-adjust: none }
+
+a:link { color: #9B9EA0; text-decoration: none }
+
+a:visited { color: #9B9EA0; text-decoration: none }
+
+a:active, a:hover { color: #08c; text-decoration: underline }
+
+input { outline: 0 }
+
+a img { vertical-align: text-bottom; }
+
+:-moz-placeholder, :-ms-input-placeholder, ::-moz-placeholder, ::-webkit-input-placeholder { font-size: 14px; color: #9B9EA0 }
+
+
+.login { margin: 0 auto; min-height: 340px }
+
+#login-wrap { position: relative }
+
+    #login-wrap .hd { position: relative; height: 36px }
+
+        #login-wrap .hd .quick { background: url(../Images/Quick.png) no-repeat; background-size: 40px 40px; width: 40px; height: 40px; text-indent: -99999px; }
+
+        #login-wrap .hd .static { background: url(../Images/Static.png) no-repeat; background-size: 40px 40px; width: 40px; height: 40px; text-indent: -99999px }
+
+        #login-wrap .hd h2 { display: block; cursor: pointer; width: 48px; height: 48px; position: absolute; top: 0; right: 0 }
+
+    #login-wrap .hd, #login-wrap #QuickLogin, #login-wrap #InputLogin { display: none; }
+
+        #login-wrap .hd .login-tip { position: absolute; top: 0; right: 45px; display: none; }
+
+        #login-wrap .hd .login-tip2 { position: absolute; top: 0; right: 45px; display: none; }
+
+
+.title { font-size: 18px; color: #373D41; line-height: 24px; width: 100px; position: absolute; top: 0; left: 0; display: block; }
+
+.poptip { height: 16px; line-height: 16px; padding: 5px 10px; background: #E6F9FC; position: relative; z-index: 9999; border: 1px solid #14C2DD }
+
+    .poptip .poptip-content { color: #14C2DD; font-size: 12px; font-weight: 400 }
+
+        .poptip .poptip-content .iconfont { color: #df9c1f; font-size: 14px; margin-right: 8px }
+
+.poptip-arrow { position: absolute; z-index: 10; *zoom: 1; top: 8px; right: 0; }
+
+    .poptip-arrow em, .poptip-arrow span { position: absolute; *zoom: 1; width: 0; height: 0; border-color: rgba(255,255,255,0); border-color: transparent \0; *border-color: transparent; _border-color: tomato; _filter: chroma(color=tomato); border-style: solid; overflow: hidden; top: 0; left: 0 }
+
+    .poptip-arrow em { top: 0; left: 1px; border-left-color: #14C2DD; border-width: 6px 0 6px 6px }
+
+    .poptip-arrow span { border-left-color: #E6F9FC; border-width: 6px 0 6px 6px }
+
+.icon-error { width: 14px; height: 14px; background-position: -30px -34px }
+
+
+/*快速登录*/
+
+.quick-login { z-index: 1; padding-top: 60px }
+
+    .quick-login .quick-msg, .quick-login-error .quick-msg .msg-err, .quick-login-error .quick-msg .msg-ok { display: none }
+
+.quick-login-error .quick-msg, .quick-login-error .quick-msg .msg-err, .quick-login-ok .quick-msg, .quick-login-ok .quick-msg .msg-ok { display: block }
+
+    .quick-login-error .quick-mod, .quick-login-ok .quick-mod, .quick-login-ok .quick-msg .msg-err { display: none }
+
+.quick-main { position: relative; padding-bottom: 15px; min-height: 130px; _height: 130px }
+
+.quick-img { width: 140px; height: 140px; margin: 0 auto; padding: 0; box-shadow: none; }
+
+.quick-description { text-align: center; font-size: 14px; color: #5F6367; line-height: 24px }
+
+    .quick-description a, a:active, a:hover { color: #00C1DE; text-decoration: none }
+
+.quick-msg { margin-bottom: 10px; margin-top: 0; }
+
+    .quick-msg h6 { font-size: 18px; color: #5F6367; margin-top: 10px; font-weight: 400; text-align: center; line-height: 24px; }
+
+    .quick-msg p { margin-top: 10px; text-align: center; font-size: 14px; color: #5F6367; }
+
+#quick-other { overflow: hidden; margin-top: 40px; zoom: 1 }
+
+    #quick-other .register { float: right }
+
+        #quick-other .register a:link, #quick-other .register a:visited { color: #9B9EA0 }
+
+        #quick-other .register a:hover { color: #00C1DE }
+
+.iconfont { font-family: iconfont !important; font-size: 16px; font-style: normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: .2px; -moz-osx-font-smoothing: grayscale }
+
+.msg-err i, .msg-ok i { display: inline-block; _display: inline; font-size: 32px; line-height: 32px; margin: 0 auto; text-align: center }
+
+.msg-ok i { color: #b5e163 }
+
+.msg-err i { color: #f37c75 }
+
+.msg-err .icon-error { background-size: 40px 40px; background-repeat: no-repeat; width: 40px; height: 40px; display: inline-block; text-indent: -99999px; background-position: 0 0 }
+
+.msg-ok .icon-ok { background-size: 40px 40px; background-repeat: no-repeat; width: 40px; height: 40px; display: inline-block; text-indent: -99999px; background-position: 0 0 }
+
+
+
+/*用户登录*/
+
+.clr:after { content: "."; display: block; height: 0; clear: both; overflow: hidden }
+
+.clr { *zoom: 1 }
+
+.form { width: 100% }
+
+#login-form { position: static; margin-top: 20px; }
+
+    #login-form a, #login-form a:hover, #login-form a:visited { text-decoration: none }
+
+    #login-form .notice-descript a, #login-form .notice-descript a:hover, #login-form .notice-descript a:visited { text-decoration: underline }
+
+    #login-form #login-error { display: none }
+
+#InputLogin { width: 330px; margin: 0 auto }
+
+#input-title { font-size: 12px; font-weight: normal; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px; font-size: 14px !important; color: #73777A; line-height: 24px; border: none; }
+
+#input-content .input-label { padding: 8px 0 2px; display: none }
+
+#input-content .input-field-wrap:after { content: "\0020"; display: block; height: 0; clear: both; overflow: hidden }
+
+#input-content .input-field-wrap { *zoom: 1 }
+
+#input-content .input-field { padding: 0; margin-bottom: 20px }
+
+#input-content .fm-text { float: left; padding: 0 10px; height: 40px; border: 1px solid #D7D8D9; line-height: 40px; font-size: 12px; color: #595959; background: #fff; vertical-align: middle; -webkit-box-shadow: 0 1px 0 #ececec inset; -moz-box-shadow: 0 1px 0 #ececec inset; -ms-box-shadow: 0 1px 0 #ececec inset; -o-box-shadow: 0 1px 0 #ececec inset; box-shadow: 0 1px 0 #ececec inset; _padding: 5px 6px; box-sizing: border-box; outline: 0; box-shadow: none; }
+
+    #input-content .fm-text:hover { border: 1px solid #00C1DE }
+
+    #input-content .fm-text:focus { border-color: #00C1DE; -webkit-box-shadow: 0 0 2px #a6cfff; -moz-box-shadow: 0 0 2px #a6cfff; -ms-box-shadow: 0 0 2px #a6cfff; -o-box-shadow: 0 0 2px #a6cfff; box-shadow: 0 0 2px #a6cfff }
+
+#input-content label { font-weight: 700 }
+
+#input-content .fm-text { width: 100% }
+
+    #input-content .fm-text::selection { background: #1996e6; color: #fff }
+
+    #input-content .fm-text::-webkit-selection { background: #1996e6; color: #fff }
+
+    #input-content .fm-text::-moz-selection { background: #1996e6; color: #fff }
+
+    #input-content .fm-text::-webkit-input-placeholder { color: #aaa }
+
+    #input-content .fm-text:-moz-placeholder { color: #aaa }
+
+    #input-content .fm-text:-ms-input-placeholder { color: #aaa }
+
+#InputLogin #input-login-submit .input-login-submit-button { width: 100%; }
+
+#InputLogin #input-login-submit .input-login-submit-button { height: 40px; line-height: 40px; border: 1px solid #00C1DE; font-size: 14px; font-weight: 700; text-align: center; color: #fff; cursor: pointer; background: url(../images/login-btn.png) repeat-x 0 -1px; background: #00C1DE; box-sizing: border-box; border-radius: 0; font-family: Microsoft YaHei,Hiragino Sans GB,\5b8b\4f53; -webkit-box-shadow: 0 1px 1px #ebe7e6; -moz-box-shadow: 0 1px 1px #ebe7e6; -ms-box-shadow: 0 1px 1px #ebe7e6; -o-box-shadow: 0 1px 1px #ebe7e6; box-shadow: 0 1px 1px #ebe7e6; zoom: 100%; _overflow: visible; }
+
+    #InputLogin #input-login-submit .input-login-submit-button:hover { border: 1px solid #00b7d3; background-position: 0 -31px; background-color: #00b7d3; }
+
+    #InputLogin #input-login-submit .input-login-submit-button:active { border: 1px solid #e87b0e; background-position: 0 -61px }
+
+a.input-login-submit-button { display: inline-block !important; height: 28px; line-height: 28px; text-align: center; text-decoration: none !important; color: #fff !important }
+
+input.input-login-submit-button { _border: 1px solid #fff; _line-height: 28px; _overflow-y: hidden; _background-color: #e87b0e }
+
+    input.input-login-submit-button:active, input.input-login-submit-button:hover { _background-color: #e87b0e }
+
+#InputLogin #input-login-other { overflow: hidden; zoom: 1; margin-top: 10px }
+
+    #InputLogin #input-login-other .remember-me { float: left; color: #9B9EA0; vertical-align: middle; }
+
+    #InputLogin #input-login-other .register { float: right }
+
+        #InputLogin #input-login-other .register a { color: #9B9EA0 }
+
+            #InputLogin #input-login-other .register a:hover { color: #00C1DE }
+
+    #InputLogin #input-login-other .forgetpassword { margin-right: 16px; float: right; }
+
+#InputLogin #input-login-otherways { margin-top: 20px; }

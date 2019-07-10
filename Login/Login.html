@@ -1,0 +1,149 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>登录页面</title>
+    <link href="Css/login.css" rel="stylesheet" type="text/css" />
+    <script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body>
+
+    <div style="width:100%;min-height:500px;background-color:#000; margin-top:20px;">
+        <div style="width:330px;background-color:#fff;float:right;margin-top:20px;margin-right:30%; padding:20px 20px; border:solid 1px #808080;">
+            <div class="login">
+                <div id="login-wrap">
+
+                    <div class="hd">
+                        <h2 id="Static2Quick" class="quick" tabindex="0">快速登录</h2>
+                        <h2 id="Quick2Static" class="static" tabindex="0">密码登录</h2>
+                        <div class="login-tip">
+                            <div class="poptip">
+                                <div class="poptip-arrow">
+                                    <em></em>
+                                    <span></span>
+                                </div>
+                                <div class="poptip-content">
+                                    快速登录
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login-tip2">
+                            <div class="poptip">
+                                <div class="poptip-arrow">
+                                    <em></em>
+                                    <span></span>
+                                </div>
+                                <div class="poptip-content">
+                                    密码登录
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="QuickLogin" class="quick-login">
+                        <div class="title">
+                            快速登录
+                        </div>
+                        <div class="quick-mod">
+                            <div class="quick-main">
+                                <div class="quick-img" style="opacity: 1;"></div>
+                            </div>
+                            <div class="quick-description">一键快速登录</div>
+                        </div>
+                        <div class="quick-msg">
+                            <div class="msg-err">
+                                <p><i class="iconfont icon-error">&#xe61b;</i></p>
+                                <h6 class="error-canceled">登录失败</h6>
+                            </div>
+                            <div class="msg-ok">
+                                <p><i class="iconfont icon-ok">&#xe60e;</i></p>
+                                <h6>扫描成功！</h6>
+                                <p>请在手机上根据提示确认登录</p>
+                            </div>
+                        </div>
+                        <div id="quick-other">
+                            <div class="register">
+                                <a href="" class="register" target=" _blank" data-spm-protocol="i">免费注册</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="login-form" name="login-form" method="post" class="form clr">
+                        <div id="InputLogin" class="input_login">
+                            <div class="title">
+                                密码登录
+                            </div>
+                            <div id="input-title">
+                                登录
+                            </div>
+
+                            <div id="input-content" class="form clr">
+                                <dl>
+                                    <dt class="input-label">
+                                        <div class="clr">
+                                            <label for="input_login_user"> 登录名 :</label>
+                                        </div>
+                                    </dt>
+                                    <dd class="input-field">
+                                        <div class="input-field-wrap">
+                                            <input id="input_login_user" class="fm-text" name="username" tabindex="1" placeholder="用户名" value="" autocorrect="off" autocapitalize="off" />
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt class="input-label">
+                                        <div class="clr">
+                                            <label for="fm-login-password">登录密码:</label>
+                                        </div>
+                                    </dt>
+                                    <dd class="input-field">
+                                        <div class="input-field-wrap">
+                                            <input id="input_login_password" class="fm-text" type="password" name="password" tabindex="2"
+                                                   placeholder="登录密码"
+                                                   autocorrect="off" autocapitalize="off" />
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div id="input-login-submit">
+                                <input value="登录" class="input-login-submit-button" type="submit" tabindex="4" name="submit-btn" />
+                            </div>
+                            <div id="input-login-other">
+                                <div class="remember-me">
+                                    <input id="remember-me" type="checkbox">记住密码
+                                </div>
+                                <div class="register">
+                                    <a href="" class="register" target=" _blank" data-spm-protocol="i">免费注册</a>
+                                </div>
+                                <div class="forgetpassword">
+                                    <a id="forgot-password-link" href="" target="_blank" data-spm-protocol="i">忘记密码</a>
+                                </div>
+                            </div>
+                            <div id="input-login-otherways">
+                                <span class="input-login-otherways-text">其他方式登录：</span>
+                                <span class="input-login-otherways-login"></span>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="Js/login.js"></script>
+    <script>
+        Login.Init({
+            StaticLogin: true //StaticLogin为true时，默认加载密码登录界面，false时，默认加载快速登录界面
+        });
+    </script>
+
+
+
+
+</body>
+
+
+
+</html>
